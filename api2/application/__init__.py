@@ -1,0 +1,15 @@
+from flask import Flask, Response
+import random
+
+app = Flask(__name__)
+
+@app.route('/get/monster', methods =['GET'])
+def get_monster():
+    monsters = ['Arzuros', 'Bishaten', 'Lagombi', 'Aksonom',
+                'Magnamalo', 'Rathalos', 'Almudron', 'Nargacuga',
+                'Valstrax', 'Teostra', 'Kushala Daora', 'Chameleos']
+    randomnum = random.randint(0,15)
+    return Response(monsters[randomnum], mimetype='text/plain')
+
+if __name__ == '__main__':
+    app.run(port=5001, debug=True, host='0.0.0.0')
