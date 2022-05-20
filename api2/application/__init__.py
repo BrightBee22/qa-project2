@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 @app.route('/get/monster', methods =['GET'])
 def get_monster():
-    monsters = ['Arzuros', 'Bishaten', 'Lagombi', 'Aksonom',
-                'Magnamalo', 'Rathalos', 'Almudron', 'Nargacuga',
-                'Valstrax', 'Teostra', 'Kushala Daora', 'Chameleos']
-    randomnum = random.randint(0,15)
+    monsters = ['Bishaten',
+                'Magnamalo', 'Rathalos',
+                'Valstrax', 'Chameleos']
+    randomnum = random.randint(0,4)
     return Response(monsters[randomnum], mimetype='text/plain')
 
 if __name__ == '__main__':

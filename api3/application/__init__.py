@@ -5,12 +5,10 @@ app = Flask(__name__)
 
 @app.route('/get/weapon', methods =['GET'])
 def get_weapon():
-    weapons = ['Sword and Shield', 'Great Sword', 'Long Sword', 'Dual Blades',
-                'Lance', 'Gunlance', 'Hammer', 'Hunting Horn', 'Switch Axe',
-                'Charge Blade', 'Insect Glaive', 'Bow', 'Light Bowgun',
-                'Heavy Bowgun']
-
-    randomnum = random.randint(0,13)
+    weapons = ['Great Sword', 'Hammer'
+                'Charge Blade', 'Insect Glaive',
+                'Bow',]
+    randomnum = random.randint(0,4)
     return Response(weapons[randomnum], mimetype='text/plain')
 
 if __name__ == '__main__':
