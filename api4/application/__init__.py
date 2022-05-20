@@ -1,13 +1,13 @@
-from flask import Flask, Response
-import requests
+from flask import Flask, Response, request
+
 
 app = Flask(__name__)
 
-@app.route('/post/recweapon', methods= ['POST'])
+@app.route('/post/recweapon', methods= ['POST', 'GET'])
 def get_threat():
 
     fortune = request.data.decode('utf 8') 
-    guide = fortune.split()
+    guide = fortune.split(",")
 
     if guide[0] == "Bishaten" and guide[1] == "Great Sword":
         recweapon =  "Bishaten is weak to Ice, therefore I'd recommend the Abominable Great Sword (from the Goss Harag tree)"

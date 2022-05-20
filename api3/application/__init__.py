@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/get/weapon', methods =['GET'])
 def get_weapon():
-    weapons = ['Great Sword', 'Hammer'
+    weapons = ['Great Sword', 'Hammer',
                 'Charge Blade', 'Insect Glaive',
                 'Bow',]
     randomnum = random.randint(0,4)
