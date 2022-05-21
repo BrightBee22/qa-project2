@@ -5,4 +5,4 @@
     state: present
     name: mystack
     compose:
-      - /home/user/qa-project2/docker-compose.yaml
+      - /home/afola/qa-project2/docker-compose.yaml

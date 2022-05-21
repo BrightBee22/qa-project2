@@ -3,4 +3,4 @@
 - name: clone git repo
   git: 
     repo: https://github.com/BrightBee22/qa-project2.git
-    dest: /home/user/qa-project2
+    dest: /home/afola/qa-project2
