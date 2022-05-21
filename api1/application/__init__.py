@@ -4,6 +4,7 @@ import requests, uuid
 app = Flask(__name__)
 app.config['SECRET_KEY'] = str(uuid.uuid4)
 
+@app.route('/', methods=['GET'])
 @app.route('/fortune', methods=['GET', 'POST'])
 def recweapon():
     monster = requests.get('http://service2:5001/get/monster').text
