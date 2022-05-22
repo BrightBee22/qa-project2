@@ -23,21 +23,21 @@ pipeline{
         }
         stage('Testing'){
             steps{
-                sh 'cd qa-project2/api1 && python3 -m pytest --cov=application'
-                sh 'cd qa-project2/api2 && python3 -m pytest --cov=application'
-                sh 'cd qa-project2/api3 && python3 -m pytest --cov=application'
-                sh 'cd qa-project2/api4 && python3 -m pytest --cov=application'
+                sh 'cd api1 && python3 -m pytest --cov=application'
+                sh 'cd api2 && python3 -m pytest --cov=application'
+                sh 'cd api3 && python3 -m pytest --cov=application'
+                sh 'cd api4 && python3 -m pytest --cov=application'
             }
         }
         stage('Build and Push Images'){
             steps{
-                sh 'cd qa-project2 && docker-compose build'
-                sh 'cd qa-project2 && docker-compose push'
+                sh 'docker-compose build'
+                sh 'docker-compose push'
             }
         }
         stage('App Deployment'){
             steps{
-                sh 'cd qa-project2 && docker-compose up -d'
+                sh 'docker-compose up -d'
             }
         }
     }
