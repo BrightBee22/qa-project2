@@ -1,4 +1,3 @@
-#!/bin/bash
 pipeline{
 
     agent any
@@ -43,3 +42,4 @@ pipeline{
     }
 }
 
+#webhooktest
