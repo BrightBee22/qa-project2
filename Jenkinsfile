@@ -7,7 +7,7 @@ pipeline{
             steps{
                 script{
                     if(fileExists('/home/jenkins/.jenkins/workspace/qa-project2')){
-                        dir('qa-project2'){ sh 'git pull qa-project2 main'}
+                        dir('qa-project2'){ sh 'git pull https://github.com/BrightBee22/qa-project2.git main'}
                     }
                     else{
                         sh 'git clone https://github.com/BrightBee22/qa-project2.git'
