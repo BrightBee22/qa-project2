@@ -6,7 +6,7 @@ pipeline{
         stage('Clone Repo'){
             steps{
                 script{
-                    if(fileExists('/home/jenkins/.jenkins/workspace/qa-project2')){
+                    if(fileExists('/home/afola/qa-project2')){
                         sh 'cd QA-practical-assessment && git pull'
                     }
                     else{
