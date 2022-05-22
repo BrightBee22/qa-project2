@@ -10,7 +10,7 @@ pipeline{
                         sh 'cd QA-practical-assessment && git pull'
                     }
                     else{
-                        sh 'git clone git@github.com:BrightBee22/qa-project2.git '
+                        sh 'git clone https://github.com/BrightBee22/qa-project2.git'
                     }
                 }
             }
