@@ -17,7 +17,7 @@ pipeline{
         }
         stage('Install Requirements for APIs'){
             steps{
-                sh 'cd qa-project2 && pip3 install -r api1/application/requirements.txt'
+                sh 'cd qa-project2 && pip3 install -r /api1/application/requirements.txt'
                 sh 'cd qa-project2 && pip3 install -r api2/application/requirements.txt'
                 sh 'cd qa-project2 && pip3 install -r api3/application/requirements.txt'
                 sh 'cd qa-project2 && pip3 install -r api4/application/requirements.txt'
