@@ -18,7 +18,7 @@ pipeline{
         }
         stage('Install Requirements for APIs'){
             steps{
-                sh 'pip3 install -r qa-project2/requirements.txt'
+                sh 'pip3 install -r requirements.txt'
             }
         }
         stage('Testing'){
