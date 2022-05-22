@@ -41,3 +41,7 @@ pipeline{
             steps{
                 sh 'cd qa-project2 && docker-compose up -d'
             }
+        }
+    }
+}
+
