@@ -13,6 +13,7 @@
 * [Final Thoughts](#final-thoughts)
 * [Acknowledgements](#ack)
 * [Presentation](#presentation)
+* [Licensing](#lis)
 
 
 ## Introduction <a name="intro"></a>
@@ -128,8 +129,26 @@ I would like to thank all the trainers at QA who guided and taught me the skills
 
 I'd like to add, references to items and creatures from the game 'Monster Hunter' do not belong to me and all rights belong to CAPCOM.
 
-
 ## Presentation <a name="intro"></a>
+Link to presentation:
+
+## Licensing <a name="lis"></a>
+   Copyright 2022 Afolabi Bright-Oridami
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+
+
 
 
 
