@@ -7,7 +7,7 @@ pipeline{
             steps{
                 script{
                     if(fileExists('/home/jenkins/.jenkins/workspace/qa-project2')){
-                        sh 'cd QA-practical-assessment && git pull'
+                        sh 'cd qa-project2 && git pull'
                     }
                     else{
                         sh 'git clone git@github.com:BrightBee22/qa-project2.git '
