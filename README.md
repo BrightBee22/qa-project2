@@ -130,7 +130,7 @@ I would like to thank all the trainers at QA who guided and taught me the skills
 I'd like to add, references to items and creatures from the game 'Monster Hunter' do not belong to me and all rights belong to CAPCOM.
 
 ## Presentation <a name="intro"></a>
-Link to presentation:
+Link to presentation: https://drive.google.com/file/d/1ibfOnKws87le-H7tbzYaVcnstW6AEio-/view?usp=sharing
 
 ## Licensing <a name="lis"></a>
    Copyright 2022 Afolabi Bright-Oridami
